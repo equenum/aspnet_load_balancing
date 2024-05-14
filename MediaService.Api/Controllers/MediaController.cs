@@ -10,6 +10,8 @@ public class MediaController : ControllerBase
     [HttpGet("stream")]
     public IActionResult GetMediaStream()
     {
+        Console.WriteLine("Call received!");
+
         var bytes = new byte[100];
         
         // generate random bytes to imitate a workload
